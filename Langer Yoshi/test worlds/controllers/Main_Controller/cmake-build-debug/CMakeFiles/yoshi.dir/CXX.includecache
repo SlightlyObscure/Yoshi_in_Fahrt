@@ -1,0 +1,152 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/Main_Controller.cpp
+src/stdafx.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/stdafx.h
+src/P3AT_MotorController.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_MotorController.h
+src/P3AT_RoadmapController.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_RoadmapController.h
+src/P3AT_CommandHandler.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_CommandHandler.h
+src/P3AT_SensorController.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_SensorController.h
+src/P3AT_NavigationStrategist.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_NavigationStrategist.h
+src/Log.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Log.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_CommandHandler.h
+Command.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Command.h
+WayPoint.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/WayPoint.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_MotorController.h
+WayPoint.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/WayPoint.h
+Command.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Command.h
+Abstract_Motors.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_Motors.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_Motors.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_NavigationStrategist.h
+WayPoint.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/WayPoint.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_RoadmapController.h
+WayPoint.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/WayPoint.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_SensorController.h
+Abstract_NavigationStrategist.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_NavigationStrategist.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Command.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Log.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_Bumper.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_CommandHandler.h
+Abstract_CommandHandler.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_CommandHandler.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_MotorController.h
+Abstract_MotorController.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_MotorController.h
+P3AT_Motors.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_Motors.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_Motors.h
+Abstract_Motors.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_Motors.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_NavigationStrategist.h
+Abstract_NavigationStrategist.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_NavigationStrategist.h
+P3AT_RoadmapController.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_RoadmapController.h
+P3AT_CommandHandler.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_CommandHandler.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_RoadmapController.h
+Abstract_RoadmapController.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_RoadmapController.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_SensorController.h
+P3AT_Bumper.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_Bumper.h
+P3AT_Ultrasound.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_Ultrasound.h
+Abstract_SensorController.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_SensorController.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_Ultrasound.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/WayPoint.h
+
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/stdafx.h
+vector
+-
+list
+-
+iterator
+-
+iostream
+-
+fstream
+-
+sstream
+-
+string
+-
+math.h
+-
+webots/motor.h
+-
+webots/robot.h
+-
+webots/distance_sensor.h
+-
+webots/touch_sensor.h
+-
+Log.h
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Log.h
+
+D:/Programs/Webots/Webots/include/controller/c/webots/distance_sensor.h
+types.h
+D:/Programs/Webots/Webots/include/controller/c/webots/types.h
+
+D:/Programs/Webots/Webots/include/controller/c/webots/motor.h
+types.h
+D:/Programs/Webots/Webots/include/controller/c/webots/types.h
+math.h
+-
+
+D:/Programs/Webots/Webots/include/controller/c/webots/nodes.h
+
+D:/Programs/Webots/Webots/include/controller/c/webots/robot.h
+types.h
+D:/Programs/Webots/Webots/include/controller/c/webots/types.h
+stdio.h
+-
+stdio.h
+D:/Programs/Webots/Webots/include/controller/c/webots/stdio.h
+nodes.h
+D:/Programs/Webots/Webots/include/controller/c/webots/nodes.h
+
+D:/Programs/Webots/Webots/include/controller/c/webots/touch_sensor.h
+types.h
+D:/Programs/Webots/Webots/include/controller/c/webots/types.h
+
+D:/Programs/Webots/Webots/include/controller/c/webots/types.h
+

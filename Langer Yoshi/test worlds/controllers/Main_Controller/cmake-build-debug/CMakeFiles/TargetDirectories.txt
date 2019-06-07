@@ -1,0 +1,3 @@
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/CMakeFiles/yoshi.dir
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/CMakeFiles/rebuild_cache.dir

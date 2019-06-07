@@ -1,0 +1,8 @@
+"C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\nicop\OneDrive\University\4. Semester\IT Projektarbeit 4\Langer Yoshi Clion"
+-- Configuring done
+WARNING: Target "yoshi" requests linking to directory "D:/Programs/Webots/Webots/msys64/mingw32/lib/binutils".  Targets may link only to libraries.  CMake is dropping the item.
+WARNING: Target "yoshi" requests linking to directory "D:/Programs/Webots/Webots/msys64/mingw32/lib/cmake".  Targets may link only to libraries.  CMake is dropping the item.
+WARNING: Target "yoshi" requests linking to directory "D:/Programs/Webots/Webots/msys64/mingw32/lib/gcc".  Targets may link only to libraries.  CMake is dropping the item.
+WARNING: Target "yoshi" requests linking to directory "D:/Programs/Webots/Webots/msys64/mingw32/lib/pkgconfig".  Targets may link only to libraries.  CMake is dropping the item.
+-- Generating done
+-- Build files have been written to: C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug
