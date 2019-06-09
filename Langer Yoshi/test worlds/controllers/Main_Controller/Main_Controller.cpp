@@ -5,6 +5,8 @@
 #include "src/P3AT_CommandHandler.h"
 #include "src/P3AT_SensorController.h"
 #include "src/P3AT_NavigationStrategist.h"
+#include "src/Mock_WorldmapController.h"
+#include "src/Mock_WorldTranslator.h"
 #include "src/Log.h"
 
 #define TIME_STEP 32
@@ -19,18 +21,22 @@ int main(int argc, char **argv)
 	Abstract_MotorController *mc = new P3AT_MotorController();
 	Abstract_RoadmapController *rc = new P3AT_RoadmapController();
 	Abstract_CommandHandler *ch = new P3AT_CommandHandler(mc);
-	Abstract_NavigationStrategist *navStrat = new P3AT_NavigationStrategist(rc, ch);
+	Abstract_WorldTranslator *wt = new Mock_WorldTranslator();
+	Abstract_NavigationStrategist *navStrat = new P3AT_NavigationStrategist(rc, ch, wt);
 	Abstract_SensorController *senseController = new P3AT_SensorController(navStrat);
 	
 
 	//Add coordinates to the roadmap that should be driven to 
-	rc->addCoord(-10, 20);
+	/*rc->addCoord(-10, 30);
 	rc->addCoord(0, 0);
 	rc->addCoord(1, 1);
 	rc->addCoord(1, -1);
 	rc->addCoord(-1, -1);
 	rc->addCoord(-1, 1);
-	rc->addCoord(0, 1);
+	rc->addCoord(0, 1);*/
+	rc->addCoord(30, 30);
+	rc->addCoord(-4, 8);
+	rc->addCoord(2, 20);
 
 	int testCounter = 0;
 

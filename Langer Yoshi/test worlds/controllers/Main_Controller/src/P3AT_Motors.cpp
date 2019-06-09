@@ -109,14 +109,20 @@ bool P3AT_Motors::isDone(bool isTurning, double distance, double degree) {
 }
 
 double P3AT_Motors::getDonePercentage(bool isTurning, double distance, double degree) {
-	double doneDist;
+	double commandDist;
 	if (isTurning) {
-		doneDist = abs(degreeToDistance(degree));
+		commandDist = abs(degreeToDistance(degree));
 	}
 	else {
-		doneDist = abs(distance);
+		commandDist = abs(distance);
 	}
-	return doneDist / abs(this->_distanceDriven);
+
+	std::ostringstream strs2;
+	strs2 << "commandDist " << abs(distance) << "\n" << "_distanceDriven " << abs(this->_distanceDriven);
+	std::string str = strs2.str();
+	Log::writeLog(str);
+
+	return abs(this->_distanceDriven) / commandDist;
 }
 
 void P3AT_Motors::stop(void) {

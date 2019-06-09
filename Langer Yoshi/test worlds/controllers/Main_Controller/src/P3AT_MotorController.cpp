@@ -19,7 +19,7 @@ P3AT_MotorController::P3AT_MotorController() : Abstract_MotorController::Abstrac
 	motVec.push_back(back_right_wheel);
 
 	double radius_wheel = 0.10;	//Reifenradius ~10cm???
-	double rotation_speed = 2 * M_PI; //Eine halbe Reifenumdrehung pro Sekunde
+	double rotation_speed = 2 * PI; //Eine halbe Reifenumdrehung pro Sekunde
 	double umfang_wendekreis = 1.6336;	//Diagonale Rad zu Rad ~ 70cm -> Kreisumfang mit der Diagonale als Annäherung in Meter (1.6336)
 
 	currentCommand.isObsolete = true;
@@ -47,10 +47,15 @@ void P3AT_MotorController::doCommand(Command c) {
 }
 
 
-void P3AT_MotorController::stop() {
-	this->Motors->stop();
-	this->_isStopped = true;
-	this->currentCommand.isObsolete = true;
+void P3AT_MotorController::stop(bool inclTurning) {
+	if (!_isTurning || inclTurning) {
+		this->Motors->stop();
+		this->_isStopped = true;
+		//this->currentCommand.isObsolete = true;
+	}
+	if (inclTurning) {
+		this->_isVeryStopped = true;
+	}
 }
 
 
@@ -76,14 +81,15 @@ void P3AT_MotorController::drive(double metres) {
 	this->Motors->drive(metres);
 }
 
-double P3AT_MotorController::calcDistance() {
-	return Motors->getDonePercentage(_isTurning, currentCommand.distance, currentCommand.rotation);
+double P3AT_MotorController::calcDistance(bool turning) {
+	return Motors->getDonePercentage(turning, currentCommand.distance, currentCommand.rotation);
 }
 
 void P3AT_MotorController::check() {
-	if (_isStopped) {
-		reportStop();
+	if (_isStopped && !_isVeryStopped) {
 		_isStopped = false;
+		_isTurning = true;
+		reportStop();
 	}
 	else if (currentCommand.isObsolete == true) {
 		Log::writeLog("isObsolete");
@@ -107,7 +113,7 @@ void P3AT_MotorController::fetchNextCommand() {
 }
 
 void P3AT_MotorController::reportStop() {
-	double percentDone = calcDistance();
+	double percentDone = calcDistance(false);
 	commandHandler->mcDone(currentCommand.rotation, percentDone);
 }
 

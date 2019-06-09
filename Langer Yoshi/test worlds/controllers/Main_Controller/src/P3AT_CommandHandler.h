@@ -9,7 +9,7 @@ class P3AT_CommandHandler : public Abstract_CommandHandler {	//see Abstract_Comm
 public:
 	P3AT_CommandHandler(Abstract_MotorController *MC);
 	void commandMotor(double currentRotation, WayPoint position, WayPoint destination);
-	void stop(void);
+	void stop(bool inclTurning);
 	WayPoint getIntermediatePos();
 	void mcDone(double rotation);
 	void mcDone(double rotation, double percentDone);

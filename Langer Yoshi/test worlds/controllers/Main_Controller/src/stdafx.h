@@ -16,3 +16,7 @@
 
 //logger
 #include "Log.h"
+
+//constants
+#define MAX_SENSOR_NUMBER 16
+#define PI 3.14159265358979323846

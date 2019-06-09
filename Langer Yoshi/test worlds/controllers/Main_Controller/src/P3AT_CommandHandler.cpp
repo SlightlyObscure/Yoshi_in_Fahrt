@@ -50,8 +50,8 @@ void P3AT_CommandHandler::commandMotor(double currentRotation, WayPoint position
 	
 }
 
-void P3AT_CommandHandler::stop(void) {
-	motorController->stop();
+void P3AT_CommandHandler::stop(bool inclTurning) {
+	motorController->stop(inclTurning);
 }
 
 WayPoint P3AT_CommandHandler::getIntermediatePos() {

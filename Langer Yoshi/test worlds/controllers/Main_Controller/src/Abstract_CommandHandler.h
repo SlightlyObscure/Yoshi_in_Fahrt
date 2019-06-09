@@ -3,7 +3,7 @@
 #include "Command.h"
 #include "WayPoint.h"
 
-#define PI 3.14159265358979323846
+
 
 class Abstract_NavigationStrategist;	//NS
 class Abstract_MotorController;			//MC
@@ -15,7 +15,7 @@ class Abstract_CommandHandler {			//CH
 public:
 	Abstract_CommandHandler(Abstract_MotorController *mc) {};
 	virtual void commandMotor(double currentRotation, WayPoint position, WayPoint destination) = 0;	//creates a command for the motor controller
-	virtual void stop(void) = 0;				//calls stop() in motor controller
+	virtual void stop(bool inclTurning) = 0;				//calls stop() in motor controller
 	virtual WayPoint getIntermediatePos() = 0;	//get new current position during execution of command
 	virtual void mcDone(double rotation) = 0;		//calls mcDone(rotation) in navigation strategist
 	virtual void mcDone(double rotation, double percentDone) = 0;	//calls mcDone(rotation, percentDone) in navigation strategist
