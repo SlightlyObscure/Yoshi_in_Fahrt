@@ -2,8 +2,8 @@
 
 #include "WayPoint.h"
 
-//This function adds, gets and removes waypoints from the roadmap
-//roadmap functions like a stack for coordinates, if no index is specified
+//This function adds, gets and removes waypoints from the roadmap.
+//Roadmap functions like a stack for coordinates, if no index is specified
 
 class Abstract_RoadmapController {	//RC
 public:

@@ -1,5 +1,7 @@
 #pragma once
 
+//This is used to write output into the file ./out.txt
+
 class Log {
 protected:
 	Log() = default;

@@ -14,10 +14,11 @@ public:
 	void stopMotors(bool inclTurning);
 	void updateWorldmap(double *sensorData);
 protected:
-	double getUnoccupied(double *sensData);
-	WayPoint getAltRoute(double direct, double driveDist);
-	double getVecLen(double vecX, double vecY);
+	double getUnoccupied(double *sensData);		//returns a suitable (unoccupied) direction to drive in (in degrees) 
+	WayPoint getAltRoute(double direct, double driveDist);	//creates waypoint for alternate route to add to RC
+	double getVecLen(double vecX, double vecY);		//returns length of the vector
+
 	double currentRotation = 0;	//degrees of rotation relative to starting rotation
 	WayPoint currentPosition;	//position relative to starting position (in meters)
-	bool noOldWayPoint = true; //is set to true if no command has been fetched yet, or if the roadmap was empty during last fetch 
+	bool noOldWayPoint = true; //if set no waypoint is deleted from RC before fetching the next; is set to true if no command has been fetched yet, or if the roadmap was empty during last fetch
 };

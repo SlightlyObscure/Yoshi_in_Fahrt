@@ -42,21 +42,20 @@ void P3AT_Motors::setAllWheelsSpeed(double speed) {
 
 void P3AT_Motors::rotate(double degree) {
 	int direction;
-	direction = degree > 0 ? 1 : -1;
+	direction = degree > 0 ? 1 : -1;	//if degree is positive -> turn right; else turn left
 
 	this->_distanceDriven = 0;
-	this->_startTimeStamp = wb_robot_get_time();
-	std::ostringstream strs;
-	strs << "new Dist.: " << this->_distanceDriven << " Meter\n";
-	strs << "new Time: " << this->_startTimeStamp << " Sek\n";
-	std::string str = strs.str();
-	Log::writeLog(str);
+	this->_startTimeStamp = wb_robot_get_time();	//record current time
+	
+	//set speed of left and right motors in opposite directions
 	this->setLeftWheelsSpeed(direction*this->ROTATION_SPEED);
 	this->setRightWheelsSpeed((-direction)*this->ROTATION_SPEED);
 }
 void P3AT_Motors::drive(double distance) {
 	this->_distanceDriven = 0;
-	this->_startTimeStamp = wb_robot_get_time();
+	this->_startTimeStamp = wb_robot_get_time();	//record current time
+
+	//if distance is positive set motors to drive forwards; else set motors to drive backwards
 	if (distance > 0) {
 		this->setAllWheelsSpeed(this->ROTATION_SPEED);
 	}
@@ -66,40 +65,32 @@ void P3AT_Motors::drive(double distance) {
 }
 
 void P3AT_Motors::recalcDistance(bool isTurning) {
+	//calc time since last update and record current time again
+	double intermediateTime = wb_robot_get_time() - this->_startTimeStamp;
+	this->_startTimeStamp = wb_robot_get_time();
+
+	//calculate distance driven since last update using current speed and intermediate time
 	if (isTurning) {
-		double intermediateTime = wb_robot_get_time() - this->_startTimeStamp;
-		this->_startTimeStamp = wb_robot_get_time();
 		double currentSpeed = RpsToMps(wb_motor_get_velocity(this->_motors[0]), this->RADIUS_WHEEL) * (0.390 / 0.473);	//komplizierte Formel für dreh geschwindigkeit :O
 		this->_distanceDriven += currentSpeed * intermediateTime;
 	}
 	else {
-		double intermediateTime = wb_robot_get_time() - this->_startTimeStamp;
-		this->_startTimeStamp = wb_robot_get_time();
 		this->_distanceDriven += (RpsToMps(wb_motor_get_velocity(this->_motors[0]), this->RADIUS_WHEEL) * intermediateTime);
 	}
 
 }
 
 bool P3AT_Motors::isDone(bool isTurning, double distance, double degree) {
-	if (isTurning) {
-		recalcDistance(true);
-		double tmp = this->_distanceDriven;
-		std::ostringstream strs;
-		strs << "DistTmp: " << tmp << "\n";
-		std::string str = strs.str();
-		Log::writeLog(str);
-		if (abs(degreeToDistance(degree)) - 0.01 < abs(this->_distanceDriven)) {
+	recalcDistance(isTurning);	//update _distanceDriven
 
-			strs << "Gedreht: " << degree << " Grad, mit Distanz:" << degreeToDistance(degree) << " Meter\n";
-			strs << "Distanz gefahren: " << this->_distanceDriven << "\n";
-			std::string str = strs.str();
-			Log::writeLog(str);
+	//check if turning or driving part of command is done
+	if (isTurning) {
+		if (abs(degreeToDistance(degree)) - 0.01 < abs(this->_distanceDriven)) {
 			this->setAllWheelsSpeed(0);
 			return true;
 		}
 	}
 	else {
-		recalcDistance(false);
 		if (abs(distance) - 0.01 < abs(this->_distanceDriven)) {
 			this->setAllWheelsSpeed(0);
 			return true;
@@ -110,6 +101,8 @@ bool P3AT_Motors::isDone(bool isTurning, double distance, double degree) {
 
 double P3AT_Motors::getDonePercentage(bool isTurning, double distance, double degree) {
 	double commandDist;
+
+	//get total distance of current command
 	if (isTurning) {
 		commandDist = abs(degreeToDistance(degree));
 	}
@@ -117,12 +110,7 @@ double P3AT_Motors::getDonePercentage(bool isTurning, double distance, double de
 		commandDist = abs(distance);
 	}
 
-	std::ostringstream strs2;
-	strs2 << "commandDist " << abs(distance) << "\n" << "_distanceDriven " << abs(this->_distanceDriven);
-	std::string str = strs2.str();
-	Log::writeLog(str);
-
-	return abs(this->_distanceDriven) / commandDist;
+	return abs(this->_distanceDriven) / commandDist;	//divide distance that has already been driven by total distance that needs to be driven for the command to be completed
 }
 
 void P3AT_Motors::stop(void) {

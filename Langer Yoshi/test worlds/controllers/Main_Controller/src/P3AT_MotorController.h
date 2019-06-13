@@ -10,18 +10,19 @@ public:
 	P3AT_MotorController();
 	void doCommand(Command cmd);
 	void stop(bool inclTurning);
-	WayPoint getIntermediate(void);
+	double getIntermediate(void);
+	bool getIsTurning();
 	void check();
 	void addCommandHandler(Abstract_CommandHandler *ch);
 private:
 	void rotate(double degrees);	//calls rotate in Motors
 	void drive(double metres);		//calls drive in Motors
-	double calcDistance(bool turning);			//calls getDonePercentage in Motors
+	double calcDistance(bool turning);		//calls getDonePercentage in Motors
 	void fetchNextCommand();		//requests new command from CH
-	void reportStop();				//does the same as fetchNextCommand(), but forwards donePercentage and causes NS to use circumnavigation strategy
+	void reportStop();				//does the same as fetchNextCommand() except it forwards donePercentage and causes NS to use circumnavigation strategy
 
-	Command currentCommand;
 	Abstract_CommandHandler *commandHandler;
+	Command currentCommand;		//latest command received from CH
 	bool _isStopped = false;	//is true if the robot had to stop prematurely and causes alternate navigation strategy
 	bool _isVeryStopped = false;	//is set to true when _isStopped is if bumpers caused the robot to stop, prevents further movement
 	bool _isTurning = true;		//is true if the rotate part of the current command is not yet done

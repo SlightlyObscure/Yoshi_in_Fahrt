@@ -38,8 +38,8 @@ void P3AT_CommandHandler::commandMotor(double currentRotation, WayPoint position
 
 		//LOG
 		std::ostringstream strs;
-		strs << position.x << "," << position.y << "; " << destination.x << "," << destination.y << "\n";
-		strs << angle << "; " << rotate << "; " << distance;
+		strs << "currentPos X: " << position.x << ", currentPos Y: " << position.y << "; destination X: " << destination.x << ", destination Y: " << destination.y << "\n";
+		strs << "calculated angle to y-axis: " << angle << "; rotation: " << rotate << "; distance: " << distance;
 		std::string str = strs.str();
 		Log::writeLog(str);
 
@@ -54,10 +54,12 @@ void P3AT_CommandHandler::stop(bool inclTurning) {
 	motorController->stop(inclTurning);
 }
 
-WayPoint P3AT_CommandHandler::getIntermediatePos() {
-	//TODO
-	WayPoint wp = WayPoint();
-	return wp;
+double P3AT_CommandHandler::getIntermediatePos() {
+	return motorController->getIntermediate();
+}
+
+bool P3AT_CommandHandler::getIsTurning() {
+	return motorController->getIsTurning();
 }
 
 void P3AT_CommandHandler::mcDone(double rotation) {

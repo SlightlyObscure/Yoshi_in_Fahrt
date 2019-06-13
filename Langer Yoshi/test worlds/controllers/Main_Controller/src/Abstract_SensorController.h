@@ -1,11 +1,13 @@
 #pragma once
 
-#include "Abstract_NavigationStrategist.h"
+#include "Abstract_NavigationStrategist.h"	//NS
+
+//This class holds the robot's sensors and acts as an abstraction layer. It also makes the robot stop if sensor data indicates an obstacle immediately in front of the robot
 
 class Abstract_SensorController {
 public:
 	Abstract_SensorController(Abstract_NavigationStrategist *ns) { };
-	virtual void checkSenses() = 0;
+	virtual void checkSenses() = 0; // is called in main loop to check for and forward sensor data; also calls stopMotors in NS if robot should stop because of obstacles
 protected:
 	Abstract_NavigationStrategist * navigationStrategist;
 };

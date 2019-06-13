@@ -10,7 +10,8 @@ public:
 	P3AT_CommandHandler(Abstract_MotorController *MC);
 	void commandMotor(double currentRotation, WayPoint position, WayPoint destination);
 	void stop(bool inclTurning);
-	WayPoint getIntermediatePos();
+	double getIntermediatePos();
+	bool getIsTurning();
 	void mcDone(double rotation);
 	void mcDone(double rotation, double percentDone);
 	void addNavigationStrategist(Abstract_NavigationStrategist *ns);

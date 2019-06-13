@@ -17,7 +17,7 @@ private:
 	void setAllWheelsSpeed(double speed);
 	void recalcDistance(bool isTurning);	//updates distance driven between last check and this check
 	double RpsToMps(double rps, double radius); //converts radiant per second to meters per second
-	double degreeToDistance(double rotationDegree);
+	double degreeToDistance(double rotationDegree);	//converts degrees into driving distance so that an aproximate completion time can be calculated
 
 	double _distanceDriven = 0;
 	double _startTimeStamp;

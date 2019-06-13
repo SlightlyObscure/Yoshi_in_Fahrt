@@ -16,7 +16,7 @@ P3AT_NavigationStrategist::P3AT_NavigationStrategist(Abstract_RoadmapController 
 }
 
 void P3AT_NavigationStrategist::mcDone(double rotation) {
-	if (noOldWayPoint == true) {	//if there is no old way point to discard skip the discarding step
+	if (noOldWayPoint == true) {	//if no way point should be discarded skip the discarding step
 		noOldWayPoint = false;
 	}
 	else {	
@@ -25,7 +25,7 @@ void P3AT_NavigationStrategist::mcDone(double rotation) {
 		currentPosition = newPos;
 		roadmapController->delCoord();
 
-		//update position with parsed value
+		//update rotation
 		currentRotation += rotation;
 	}
 	
@@ -50,10 +50,11 @@ void P3AT_NavigationStrategist::mcDone(double rotation, double percentDone) {
 	double direct = getUnoccupied(sensData);
 	delete[]sensData;
 	
+	//create waypoint and add it to roadmap
 	WayPoint altRoute = getAltRoute(direct, 1);
-
 	roadmapController->addCoord(altRoute.x, altRoute.y);
 
+	//LOG
 	std::ostringstream strs2;
 	strs2 << "percentDone " << percentDone << "\n";
 	strs2 << "posX " << currentPosition.x << ", posY: " << currentPosition.y << "\n";
@@ -65,6 +66,7 @@ void P3AT_NavigationStrategist::mcDone(double rotation, double percentDone) {
 }
 
 WayPoint P3AT_NavigationStrategist::getAltRoute(double direct, double driveDist) {
+	//calculate desired rotation relative to y-axis
 	double newRot = currentRotation + direct;
 	if (newRot >= 360) {
 		newRot -= 360;
@@ -72,9 +74,10 @@ WayPoint P3AT_NavigationStrategist::getAltRoute(double direct, double driveDist)
 	else if (newRot < 0) {
 		newRot += 360;
 	}
-
+	
+	//calculate vector
 	double vecX, vecY;
-
+	//set vector for special cases
 	if (newRot == 0) {
 		vecX = 0;
 		vecY = 1;
@@ -92,22 +95,27 @@ WayPoint P3AT_NavigationStrategist::getAltRoute(double direct, double driveDist)
 		vecY = 0;
 	}
 	else {
+		//calculate ratio between vecX and vecY
 		double ratio = tan(newRot * PI / 180);
 
-		if (newRot < 180) {
+		//tan() returns the same value for x as for x + 180 
+		if (newRot < 180) {	//0 <= newRot < 180 -> robot should drive to the right (relative to y-axis) -> vecX = 1
 			vecX = 1;
 		}
-		else {
+		else {	//newRot >= 180 -> robot should drive to the left (relative to y-axis) -> vecX = -1
 			vecX = -1;
 		}
 
+		//use ratio to get vecY
 		vecY = vecX / ratio;
 	}
 	
+	//scale vector so that it is normalized -> multiply with desired length
 	double len = getVecLen(vecX, vecY);
 	double scaledX = vecX / len * driveDist;
 	double scaledY = vecY / len * driveDist;
 
+	//create and return waypoint by adding vector to current position
 	WayPoint newRoute;
 	newRoute.x = currentPosition.x + scaledX;
 	newRoute.y = currentPosition.y + scaledY;
@@ -120,10 +128,12 @@ double P3AT_NavigationStrategist::getVecLen(double vecX, double vecY) {
 }
 
 double P3AT_NavigationStrategist::getUnoccupied(double *sensData) {
-	double unOcThresh = 800;
+	double unOcThresh = 800;	//direction of sensor output counts as unoccupied if value is below this
+	
+	//these arrays correspond to each sensor; is true if sensor value is below threshold
 	bool front[MAX_SENSOR_NUMBER / 2] = { false };
 	bool back[MAX_SENSOR_NUMBER / 2] = { false };
-	for (int i = 0; i < MAX_SENSOR_NUMBER / 2; i++) {
+	for (int i = 0; i < MAX_SENSOR_NUMBER / 2; i++) {	//set array values
 		int backI = i + (MAX_SENSOR_NUMBER / 2);
 
 		if (sensData[i] > unOcThresh) {
@@ -134,15 +144,9 @@ double P3AT_NavigationStrategist::getUnoccupied(double *sensData) {
 		}
 	}
 
-	/*for (int i = 0; i < 8; i++) {
-		std::ostringstream strs2;
-		strs2 << "front " << i << ": " << front[i] << ", back " << i + 8 << ": " << back[i];
-		std::string str = strs2.str();
-		Log::writeLog(str);
-	}*/
-
+	//the closer an obstacle is to "straight in front" of the robot the greater the rotation has to be to avoid it
 	int leftVal = 0, rightVal = 0;
-
+	//get necessary rotation to avoid obstacles on the left
 	if (front[3]) {
 		leftVal = -90;
 	}
@@ -156,7 +160,8 @@ double P3AT_NavigationStrategist::getUnoccupied(double *sensData) {
 		leftVal = -15;
 	}
 
-	if (leftVal == 0 && front[4]) {
+	//get necessary rotation to avoid obstacles on the right
+	if (leftVal == 0 && front[4]) {		//if left already has an obstacle a 90° turn will usually not be enough; however if sensor #4 and #5 both report an obstacle a 90° turn is sufficient as these both point straight ahead
 		rightVal = 90;
 	}
 	else if (front[5]) {
@@ -169,20 +174,20 @@ double P3AT_NavigationStrategist::getUnoccupied(double *sensData) {
 		rightVal = 15;
 	}
 
-	if (leftVal != 0 && rightVal == 0) {
+	if (leftVal != 0 && rightVal == 0) {//if obstacles are only on the left return left
 		return (double) leftVal;
 	}
-	else if (rightVal != 0 && leftVal == 0) {
+	else if (rightVal != 0 && leftVal == 0) {//if obstacles are only on the right return right
 		return (double) rightVal;
 	}
-	else if (leftVal == 0 && rightVal == 0) {
+	else if (leftVal == 0 && rightVal == 0) {//if there are no obstacles return 0 (for driving straight)
 		return 0;
 	}
 	else {
-		return -180;
+		return -180;	//if there are obstacles on both sides return 180 for full 180° turn
 	}
+	//TODO better strategy for tight spaces
 }
-
 
 
 void P3AT_NavigationStrategist::causeMotion() {
@@ -201,7 +206,7 @@ void P3AT_NavigationStrategist::stopMotors(bool inclTurning) {
 }
 
 void P3AT_NavigationStrategist::updateWorldmap(double * sensorData) {
-	worldTranslator->updateWorldmap(sensorData);
+	worldTranslator->updateWorldmap(sensorData, currentRotation);
 }
 
 
