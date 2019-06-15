@@ -22,8 +22,8 @@ int main(int argc, char **argv)
 	Abstract_RoadmapController *rc = new P3AT_RoadmapController();
 	Abstract_CommandHandler *ch = new P3AT_CommandHandler(mc);
 	Abstract_WorldTranslator *wt = new Mock_WorldTranslator();
-	Abstract_NavigationStrategist *navStrat = new P3AT_NavigationStrategist(rc, ch, wt);
-	Abstract_SensorController *senseController = new P3AT_SensorController(navStrat);
+	Abstract_NavigationStrategist *ns = new P3AT_NavigationStrategist(rc, ch, wt);
+	Abstract_SensorController *sc = new P3AT_SensorController(ns);
 	
 
 	//Add coordinates to the roadmap that should be driven to 
@@ -36,20 +36,14 @@ int main(int argc, char **argv)
 	rc->addCoord(0, 1);*/
 	rc->addCoord(30, 30);
 	rc->addCoord(-4, 8);
-	rc->addCoord(2, 20);
+	rc->addCoord(0, 20);
 
 	int testCounter = 0;
 
 	// control loop
 	while (wb_robot_step(TIME_STEP) != -1) {
 		mc->check();	//check if last command is done
-		if (testCounter == 1000) {
-			//Log::writeLog("NEW COMMAND ADDED               !!!");
-			//rc->addCoord(0, 3);
-		}
-		testCounter++;
-
-		senseController->checkSenses();
+		sc->checkSenses();	//checks if robot needs to stop and writes sensor data into worldmap (theoretically)
 	}
 	
 	wb_robot_cleanup();
