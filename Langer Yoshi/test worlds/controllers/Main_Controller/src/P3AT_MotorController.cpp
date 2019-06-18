@@ -5,6 +5,8 @@
 #include "Command.h"
 #include "Log.h"
 
+
+
 P3AT_MotorController::P3AT_MotorController() : Abstract_MotorController::Abstract_MotorController() {
 	// get devices
 	WbDeviceTag front_left_wheel = wb_robot_get_device("front left wheel");

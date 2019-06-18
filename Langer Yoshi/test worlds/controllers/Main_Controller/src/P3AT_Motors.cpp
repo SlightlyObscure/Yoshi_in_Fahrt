@@ -6,7 +6,7 @@
 P3AT_Motors::P3AT_Motors(std::vector<WbDeviceTag> motors, double radius_wheel, double rotation_speed, double umfang_wendekreis)
 	: Abstract_Motors(motors, radius_wheel, rotation_speed, umfang_wendekreis) {
 	this->RADIUS_WHEEL = radius_wheel;
-	this->ROTATION_SPEED = rotation_speed;
+	this->ROTATION_SPEED = 5;
 	this->UMFANG_WENDEKREIS = umfang_wendekreis;
 	this->_motors = motors;
 
@@ -16,6 +16,9 @@ P3AT_Motors::P3AT_Motors(std::vector<WbDeviceTag> motors, double radius_wheel, d
 }
 
 void P3AT_Motors::setLeftWheelsSpeed(double speed) {
+    wb_motor_set_velocity(wb_robot_get_device("front left wheel"), speed);
+    return;
+
 	if (this->_motors.size() == 2) {
 		wb_motor_set_velocity(this->_motors[0], speed);
 	}
@@ -25,7 +28,10 @@ void P3AT_Motors::setLeftWheelsSpeed(double speed) {
 	}
 }
 void P3AT_Motors::setRightWheelsSpeed(double speed) {
-	if (this->_motors.size() == 2) {
+    wb_motor_set_velocity(wb_robot_get_device("front right wheel"), speed);
+    return;
+
+    if (this->_motors.size() == 2) {
 		wb_motor_set_velocity(this->_motors[1], speed);
 	}
 	else	if (this->_motors.size() == 4) {
@@ -35,6 +41,10 @@ void P3AT_Motors::setRightWheelsSpeed(double speed) {
 }
 
 void P3AT_Motors::setAllWheelsSpeed(double speed) {
+    wb_motor_set_velocity(wb_robot_get_device("front right wheel"), speed);
+    wb_motor_set_velocity(wb_robot_get_device("front left wheel"), speed);
+    
+    return;
 	for (auto motor : _motors) {
 		wb_motor_set_velocity(motor, speed);
 	}
@@ -48,8 +58,8 @@ void P3AT_Motors::rotate(double degree) {
 	this->_startTimeStamp = wb_robot_get_time();	//record current time
 	
 	//set speed of left and right motors in opposite directions
-	this->setLeftWheelsSpeed(direction*this->ROTATION_SPEED);
-	this->setRightWheelsSpeed((-direction)*this->ROTATION_SPEED);
+	this->setLeftWheelsSpeed(-direction * MOVEMENT_SPEED);
+	this->setRightWheelsSpeed((direction) * MOVEMENT_SPEED);
 }
 void P3AT_Motors::drive(double distance) {
 	this->_distanceDriven = 0;
@@ -57,10 +67,10 @@ void P3AT_Motors::drive(double distance) {
 
 	//if distance is positive set motors to drive forwards; else set motors to drive backwards
 	if (distance > 0) {
-		this->setAllWheelsSpeed(this->ROTATION_SPEED);
+		this->setAllWheelsSpeed(MOVEMENT_SPEED);
 	}
 	else {
-		this->setAllWheelsSpeed(-this->ROTATION_SPEED);
+		this->setAllWheelsSpeed(-MOVEMENT_SPEED);
 	}
 }
 

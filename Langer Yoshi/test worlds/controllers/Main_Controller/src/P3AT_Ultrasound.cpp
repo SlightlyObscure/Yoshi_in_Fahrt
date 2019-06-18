@@ -20,6 +20,7 @@ double *P3AT_Ultrasound::getData() {
 	double *data = new double[MAX_SENSOR_NUMBER];
 	for (int i = 0; i < MAX_SENSOR_NUMBER; i++) {
 		data[i] = wb_distance_sensor_get_value(sensors[i]);
+		std::cout << "Sensor value: " << data[i] << std::endl;
 	}
 	return data;
 }

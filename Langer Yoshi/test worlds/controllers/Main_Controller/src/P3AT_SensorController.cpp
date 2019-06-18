@@ -29,7 +29,7 @@ void P3AT_SensorController::checkSenses() {
 	}
 
 	if (bumper->getData()) {
-		navigationStrategist->stopMotors(true);		//inclTurning true because getting true from bumper indicates a dangerous situation
+		//navigationStrategist->stopMotors(true);		//inclTurning true because getting true from bumper indicates a dangerous situation
 	}
 
 	navigationStrategist->updateWorldmap(ultraData);	//send sensor data off to be recorded in

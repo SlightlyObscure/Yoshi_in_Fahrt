@@ -18,6 +18,7 @@ int main(int argc, char **argv)
 
 	//Initialize robot and controllers
 	wb_robot_init();
+	wb_robot_set_mode(WB_MODE_REMOTE_CONTROL, (void*)"-rp /dev/ttyUSB0");
 	Abstract_MotorController *mc = new P3AT_MotorController();
 	Abstract_RoadmapController *rc = new P3AT_RoadmapController();
 	Abstract_CommandHandler *ch = new P3AT_CommandHandler(mc);
@@ -37,6 +38,7 @@ int main(int argc, char **argv)
 	rc->addCoord(30, 30);
 	rc->addCoord(-4, 8);
 	rc->addCoord(0, 20);
+    rc->addCoord(0, 1000);
 
 	int testCounter = 0;
 

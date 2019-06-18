@@ -2,6 +2,8 @@
 
 #include "Abstract_Motors.h"
 
+#define MOVEMENT_SPEED 20.0
+
 class P3AT_Motors : public Abstract_Motors {	//see Abstract_Motors.h for more information
 public:
 	P3AT_Motors(std::vector<WbDeviceTag> motors, double radius_wheel, double rotation_speed, double umfang_wendekreis);
