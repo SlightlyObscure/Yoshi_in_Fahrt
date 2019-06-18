@@ -8,171 +8,199 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug"/>
+				<Option working_dir="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="yoshi">
-				<Option output="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/yoshi.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Programs/Webots/Webots/include/controller/c"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/../../../../i686-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 yoshi"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="yoshi/fast">
-				<Option output="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/yoshi.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/Programs/Webots/Webots/include/controller/c"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/../../../../i686-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 yoshi/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug"/>
+				<Option working_dir="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Main_Controller">
+				<Option output="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/cmake-build-debug/Main_Controller" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/webots/include/controller/c"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 Main_Controller"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Main_Controller/fast">
+				<Option output="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/cmake-build-debug/Main_Controller" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/webots/include/controller/c"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 Main_Controller/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/herbert/Documents/Yoshi_in_Fahrt/Langer\ Yoshi/test\ worlds/controllers/Main_Controller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/Main_Controller.cpp">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/Main_Controller.cpp">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/Main_Controller.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/Main_Controller.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_CommandHandler.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_CommandHandler.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_MotorController.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_MotorController.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_Motors.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_Motors.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_NavigationStrategist.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_NavigationStrategist.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_RoadmapController.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_RoadmapController.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Abstract_SensorController.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_SensorController.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Command.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_WorldTranslator.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Log.cpp">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_WorldmapController.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/Log.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Command.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_Bumper.cpp">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Log.cpp">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_Bumper.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Log.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_CommandHandler.cpp">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Mapdata.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_CommandHandler.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Mock_WorldTranslator.cpp">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_MotorController.cpp">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Mock_WorldTranslator.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_MotorController.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Mock_WorldmapController.cpp">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_Motors.cpp">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Mock_WorldmapController.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_Motors.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_Bumper.cpp">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_NavigationStrategist.cpp">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_Bumper.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_NavigationStrategist.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_CommandHandler.cpp">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_RoadmapController.cpp">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_CommandHandler.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_RoadmapController.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_MotorController.cpp">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_SensorController.cpp">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_MotorController.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_SensorController.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_Motors.cpp">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_Ultrasound.cpp">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_Motors.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/P3AT_Ultrasound.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_NavigationStrategist.cpp">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/WayPoint.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_NavigationStrategist.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/stdafx.cpp">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_RoadmapController.cpp">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/src/stdafx.h">
-			<Option target="yoshi"/>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_RoadmapController.h">
+			<Option target="Main_Controller"/>
 		</Unit>
-		<Unit filename="C:/Users/nicop/OneDrive/University/4. Semester/IT Projektarbeit 4/Langer Yoshi Clion/CMakeLists.txt">
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_SensorController.cpp">
+			<Option target="Main_Controller"/>
+		</Unit>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_SensorController.h">
+			<Option target="Main_Controller"/>
+		</Unit>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_Ultrasound.cpp">
+			<Option target="Main_Controller"/>
+		</Unit>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_Ultrasound.h">
+			<Option target="Main_Controller"/>
+		</Unit>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/WayPoint.h">
+			<Option target="Main_Controller"/>
+		</Unit>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Worldmap.h">
+			<Option target="Main_Controller"/>
+		</Unit>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/stdafx.cpp">
+			<Option target="Main_Controller"/>
+		</Unit>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/stdafx.h">
+			<Option target="Main_Controller"/>
+		</Unit>
+		<Unit filename="/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

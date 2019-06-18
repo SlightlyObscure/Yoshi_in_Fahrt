@@ -10,21 +10,16 @@ P3AT_Ultrasound::P3AT_Ultrasound() {
 	int i;
 
 	for (i = 0; i < MAX_SENSOR_NUMBER; ++i) {
-		sprintf_s(sensor_name, "so%d", i);
+		sprintf(sensor_name, "so%d", i);
 		sensors[i] = wb_robot_get_device(sensor_name);
 		wb_distance_sensor_enable(sensors[i], time_step);
 	}
 }
 
 double *P3AT_Ultrasound::getData() {
-	double data[MAX_SENSOR_NUMBER];
+	double *data = new double[MAX_SENSOR_NUMBER];
 	for (int i = 0; i < MAX_SENSOR_NUMBER; i++) {
 		data[i] = wb_distance_sensor_get_value(sensors[i]);
-
-		/*std::ostringstream strs2;
-		strs2 << "sensor" << i << ": " << data[i];
-		std::string str = strs2.str();
-		Log::writeLog(str);*/
 	}
 	return data;
 }

@@ -71,7 +71,7 @@ void P3AT_Motors::recalcDistance(bool isTurning) {
 
 	//calculate distance driven since last update using current speed and intermediate time
 	if (isTurning) {
-		double currentSpeed = RpsToMps(wb_motor_get_velocity(this->_motors[0]), this->RADIUS_WHEEL) * (0.390 / 0.473);	//komplizierte Formel für dreh geschwindigkeit :O
+		double currentSpeed = RpsToMps(wb_motor_get_velocity(this->_motors[0]), this->RADIUS_WHEEL) * (0.390 / 0.473);	//komplizierte Formel fï¿½r dreh geschwindigkeit :O
 		this->_distanceDriven += currentSpeed * intermediateTime;
 	}
 	else {

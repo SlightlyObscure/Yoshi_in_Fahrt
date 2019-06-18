@@ -1,0 +1,16 @@
+currentPos X: 0, currentPos Y: 0; destination X: 0, destination Y: 20
+calculated angle to y-axis: 0; rotation: 0; distance: 20
+percentDone 0.412177
+posX 0, posY: 8.24354
+x: -1, y: 8.24354
+currentPos X: 0, currentPos Y: 8.24354; destination X: -1, destination Y: 8.24354
+calculated angle to y-axis: 270; rotation: -90; distance: 1
+currentPos X: -1, currentPos Y: 8.24354; destination X: 0, destination Y: 20
+calculated angle to y-axis: 4.86185; rotation: 94.8619; distance: 11.7989
+percentDone 0.0221529
+posX -0.977847, posY: 8.50398
+x: -1.97425, y: 8.58873
+currentPos X: -0.977847, currentPos Y: 8.50398; destination X: -1.97425, destination Y: 8.58873
+calculated angle to y-axis: -85.1381; rotation: -90; distance: 1
+currentPos X: -1.97425, currentPos Y: 8.58873; destination X: 0, destination Y: 20
+calculated angle to y-axis: 9.81551; rotation: 94.9537; distance: 11.5808

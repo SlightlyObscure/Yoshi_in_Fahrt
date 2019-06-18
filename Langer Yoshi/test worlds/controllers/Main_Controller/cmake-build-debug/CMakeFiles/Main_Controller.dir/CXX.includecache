@@ -1,0 +1,80 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_Motors.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Log.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_Motors.cpp
+stdafx.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/stdafx.h
+P3AT_Motors.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_Motors.h
+Log.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Log.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_Motors.h
+Abstract_Motors.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_Motors.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/stdafx.h
+vector
+-
+list
+-
+iterator
+-
+iostream
+-
+fstream
+-
+sstream
+-
+string
+-
+math.h
+-
+webots/motor.h
+-
+webots/robot.h
+-
+webots/distance_sensor.h
+-
+webots/touch_sensor.h
+-
+Log.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Log.h
+
+/usr/local/webots/include/controller/c/webots/distance_sensor.h
+types.h
+/usr/local/webots/include/controller/c/webots/types.h
+
+/usr/local/webots/include/controller/c/webots/motor.h
+types.h
+/usr/local/webots/include/controller/c/webots/types.h
+math.h
+-
+
+/usr/local/webots/include/controller/c/webots/nodes.h
+
+/usr/local/webots/include/controller/c/webots/robot.h
+types.h
+/usr/local/webots/include/controller/c/webots/types.h
+stdio.h
+-
+stdio.h
+/usr/local/webots/include/controller/c/webots/stdio.h
+nodes.h
+/usr/local/webots/include/controller/c/webots/nodes.h
+
+/usr/local/webots/include/controller/c/webots/touch_sensor.h
+types.h
+/usr/local/webots/include/controller/c/webots/types.h
+
+/usr/local/webots/include/controller/c/webots/types.h
+

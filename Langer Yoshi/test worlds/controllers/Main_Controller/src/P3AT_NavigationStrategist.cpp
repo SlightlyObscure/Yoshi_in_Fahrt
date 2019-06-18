@@ -161,7 +161,7 @@ double P3AT_NavigationStrategist::getUnoccupied(double *sensData) {
 	}
 
 	//get necessary rotation to avoid obstacles on the right
-	if (leftVal == 0 && front[4]) {		//if left already has an obstacle a 90° turn will usually not be enough; however if sensor #4 and #5 both report an obstacle a 90° turn is sufficient as these both point straight ahead
+	if (leftVal == 0 && front[4]) {		//if left already has an obstacle a 90 turn will usually not be enough; however if sensor #4 and #5 both report an obstacle a 90 turn is sufficient as these both point straight ahead
 		rightVal = 90;
 	}
 	else if (front[5]) {
@@ -184,7 +184,7 @@ double P3AT_NavigationStrategist::getUnoccupied(double *sensData) {
 		return 0;
 	}
 	else {
-		return -180;	//if there are obstacles on both sides return 180 for full 180° turn
+		return -180;	//if there are obstacles on both sides return 180 for full 180 turn
 	}
 	//TODO better strategy for tight spaces
 }

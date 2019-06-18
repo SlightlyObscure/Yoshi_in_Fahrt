@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Abstract_NavigationStrategist.h"	//NS
+class Abstract_NavigationStrategist;	//NS
 
 //This class holds the robot's sensors and acts as an abstraction layer. It also makes the robot stop if sensor data indicates an obstacle immediately in front of the robot
 
@@ -16,13 +16,13 @@ protected:
 /*
 Sensor indexes:#
 0-7: Front
-0: -90° to front; leftmost
-1: -64,3° to front
-2: -38,6° to front
-3: -12,9° to front; front-ish
-4: 12,9° to front; front-ish
-5: 38,6° to front
-6: 64,3° to front
-7: 90° to front; rightmost
+0: -90ï¿½ to front; leftmost
+1: -64,3ï¿½ to front
+2: -38,6ï¿½ to front
+3: -12,9ï¿½ to front; front-ish
+4: 12,9ï¿½ to front; front-ish
+5: 38,6ï¿½ to front
+6: 64,3ï¿½ to front
+7: 90ï¿½ to front; rightmost
 8-16: Back
 */
