@@ -58,8 +58,16 @@ void P3AT_Motors::rotate(double degree) {
 	this->_startTimeStamp = wb_robot_get_time();	//record current time
 	
 	//set speed of left and right motors in opposite directions
-	this->setLeftWheelsSpeed(-direction * MOVEMENT_SPEED);
-	this->setRightWheelsSpeed((direction) * MOVEMENT_SPEED);
+	if(degree > 0) {
+        this->setRightWheelsSpeed(MOVEMENT_SPEED);
+        this->setLeftWheelsSpeed(0);
+	}
+	else {
+        this->setLeftWheelsSpeed(MOVEMENT_SPEED);
+        this->setRightWheelsSpeed(0);
+	}
+
+
 }
 void P3AT_Motors::drive(double distance) {
 	this->_distanceDriven = 0;
