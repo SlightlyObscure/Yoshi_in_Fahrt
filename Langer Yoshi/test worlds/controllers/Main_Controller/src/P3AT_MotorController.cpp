@@ -83,6 +83,8 @@ void P3AT_MotorController::check() {
 	}
 	else if (_isStopped) {
 		//initiate circumnavigation strategy
+		std::cout << "stopped" << std::endl;
+
 		_isStopped = false;
 		_isTurning = true;
 		reportStop();

@@ -2,7 +2,9 @@
 
 #include "Abstract_Motors.h"
 
-#define MOVEMENT_SPEED 20.0
+#define MOVEMENT_SPEED 5.0
+#define ROT_MULT_MOD 1.7
+#define ROT_ADD_MOD 0.0 
 
 class P3AT_Motors : public Abstract_Motors {	//see Abstract_Motors.h for more information
 public:

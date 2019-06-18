@@ -16,8 +16,8 @@ P3AT_Motors::P3AT_Motors(std::vector<WbDeviceTag> motors, double radius_wheel, d
 }
 
 void P3AT_Motors::setLeftWheelsSpeed(double speed) {
-    wb_motor_set_velocity(wb_robot_get_device("front left wheel"), speed);
-    return;
+    /*wb_motor_set_velocity(wb_robot_get_device("front left wheel"), speed);
+    return;*/
 
 	if (this->_motors.size() == 2) {
 		wb_motor_set_velocity(this->_motors[0], speed);
@@ -28,8 +28,8 @@ void P3AT_Motors::setLeftWheelsSpeed(double speed) {
 	}
 }
 void P3AT_Motors::setRightWheelsSpeed(double speed) {
-    wb_motor_set_velocity(wb_robot_get_device("front right wheel"), speed);
-    return;
+    /*wb_motor_set_velocity(wb_robot_get_device("front right wheel"), speed);
+    return;*/
 
     if (this->_motors.size() == 2) {
 		wb_motor_set_velocity(this->_motors[1], speed);
@@ -59,15 +59,13 @@ void P3AT_Motors::rotate(double degree) {
 	
 	//set speed of left and right motors in opposite directions
 	if(degree > 0) {
-        this->setRightWheelsSpeed(MOVEMENT_SPEED);
-        this->setLeftWheelsSpeed(0);
-	}
-	else {
         this->setLeftWheelsSpeed(MOVEMENT_SPEED);
         this->setRightWheelsSpeed(0);
 	}
-
-
+	else {
+        this->setRightWheelsSpeed(MOVEMENT_SPEED);
+        this->setLeftWheelsSpeed(0);
+	}
 }
 void P3AT_Motors::drive(double distance) {
 	this->_distanceDriven = 0;
@@ -89,13 +87,22 @@ void P3AT_Motors::recalcDistance(bool isTurning) {
 
 	//calculate distance driven since last update using current speed and intermediate time
 	if (isTurning) {
-		double currentSpeed = RpsToMps(wb_motor_get_velocity(this->_motors[0]), this->RADIUS_WHEEL) * (0.390 / 0.473);	//komplizierte Formel f�r dreh geschwindigkeit :O
+		double velLeft = wb_motor_get_velocity(wb_robot_get_device("front left wheel"));
+		double velRight = wb_motor_get_velocity(wb_robot_get_device("front right wheel"));
+		double vel = 0;
+		if (velLeft > 0) {
+			vel = velLeft;
+		}
+		else {
+			vel = velRight;
+		}
+		double currentSpeed = RpsToMps(vel, this->RADIUS_WHEEL) * (0.390 / 0.473);	//komplizierte Formel f�r dreh geschwindigkeit :O
 		this->_distanceDriven += currentSpeed * intermediateTime;
 	}
 	else {
 		this->_distanceDriven += (RpsToMps(wb_motor_get_velocity(this->_motors[0]), this->RADIUS_WHEEL) * intermediateTime);
 	}
-
+	
 }
 
 bool P3AT_Motors::isDone(bool isTurning, double distance, double degree) {
@@ -103,7 +110,8 @@ bool P3AT_Motors::isDone(bool isTurning, double distance, double degree) {
 
 	//check if turning or driving part of command is done
 	if (isTurning) {
-		if (abs(degreeToDistance(degree)) - 0.01 < abs(this->_distanceDriven)) {
+		double moddedDist = (abs(degreeToDistance(degree)) * ROT_MULT_MOD) + ROT_ADD_MOD;
+		if (moddedDist - 0.01 < abs(this->_distanceDriven)) {
 			this->setAllWheelsSpeed(0);
 			return true;
 		}
