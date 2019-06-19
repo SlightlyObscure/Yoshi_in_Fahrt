@@ -6,21 +6,71 @@
 
 #IncludeRegexTransform: 
 
-/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_Motors.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_CommandHandler.h
+Command.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Command.h
+WayPoint.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/WayPoint.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_NavigationStrategist.h
+WayPoint.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/WayPoint.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_RoadmapController.h
+WayPoint.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/WayPoint.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_WorldTranslator.h
+Abstract_WorldmapController.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_WorldmapController.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_WorldmapController.h
+Worldmap.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Worldmap.h
+Mapdata.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Mapdata.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Command.h
 
 /home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Log.h
 
-/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_Motors.cpp
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Mapdata.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Mock_WorldTranslator.h
+Abstract_WorldTranslator.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_WorldTranslator.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_CommandHandler.h
+Abstract_CommandHandler.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_CommandHandler.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_NavigationStrategist.cpp
 stdafx.h
 /home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/stdafx.h
-P3AT_Motors.h
-/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_Motors.h
+P3AT_NavigationStrategist.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_NavigationStrategist.h
 Log.h
 /home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Log.h
 
-/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_Motors.h
-Abstract_Motors.h
-/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_Motors.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_NavigationStrategist.h
+Abstract_NavigationStrategist.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_NavigationStrategist.h
+P3AT_RoadmapController.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_RoadmapController.h
+P3AT_CommandHandler.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_CommandHandler.h
+Mock_WorldTranslator.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Mock_WorldTranslator.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/P3AT_RoadmapController.h
+Abstract_RoadmapController.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Abstract_RoadmapController.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/WayPoint.h
+
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Worldmap.h
+Mapdata.h
+/home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/Mapdata.h
 
 /home/herbert/Documents/Yoshi_in_Fahrt/Langer Yoshi/test worlds/controllers/Main_Controller/src/stdafx.h
 vector

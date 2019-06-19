@@ -21,17 +21,23 @@ WayPoint P3AT_RoadmapController::getCoord(int index) {
 	return *it;
 }
 
-void P3AT_RoadmapController::addCoord(double x, double y) {
+void P3AT_RoadmapController::addCoord(double x, double y, bool navGarbage) {
+    if ( getCoord().isNavGarbage) {
+        delCoord();
+    }
+
 	WayPoint wp;
 	wp.x = x;
 	wp.y = y;
+	wp.isNavGarbage = navGarbage;
 	roadmap.push_front(wp);
 }
 
-void P3AT_RoadmapController::addCoord(double x, double y, int index) {
+void P3AT_RoadmapController::addCoord(double x, double y, int index, bool navGarbage) {
 	WayPoint wp;
 	wp.x = x;
 	wp.y = y;
+    wp.isNavGarbage = navGarbage;
 	//iterates through roadmap until it reaches index, inserts coordinate before index
 	std::list<WayPoint> ::iterator it = roadmap.begin();
 	std::advance(it, index);

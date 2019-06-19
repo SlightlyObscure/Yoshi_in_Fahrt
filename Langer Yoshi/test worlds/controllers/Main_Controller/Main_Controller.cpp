@@ -28,19 +28,14 @@ int main(int argc, char **argv)
 	
 
 	//Add coordinates to the roadmap that should be driven to 
-	/*rc->addCoord(-10, 30);
-	rc->addCoord(0, 0);
-	rc->addCoord(1, 1);
-	rc->addCoord(1, -1);
-	rc->addCoord(-1, -1);
-	rc->addCoord(-1, 1);
-	rc->addCoord(0, 1);*/
-	rc->addCoord(30, 30);
-	rc->addCoord(-4, 8);
-	rc->addCoord(0, 20);
-    rc->addCoord(0, 1000);
-
-	int testCounter = 0;
+	/*rc->addCoord(-10, 30, false);
+	rc->addCoord(0, 0, false);
+	rc->addCoord(1, 1, false);
+	rc->addCoord(1, -1, false);
+	rc->addCoord(-1, -1, false);
+	rc->addCoord(-1, 1, false);
+	rc->addCoord(0, 1, false);*/
+    rc->addCoord(0, 1000, false);
 
 	// control loop
 	while (wb_robot_step(TIME_STEP) != -1) {

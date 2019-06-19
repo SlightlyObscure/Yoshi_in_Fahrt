@@ -14,7 +14,7 @@ P3AT_SensorController::P3AT_SensorController(Abstract_NavigationStrategist *ns) 
 
 void P3AT_SensorController::checkSenses() {
 	double *ultraData = ultrasound->getData();
-	double thresh[8] = { 950, 850, 825, 800, 800, 825, 850, 950 };	//threshold for when robot should stop; more strict in front because stop is more likely necessary
+	double thresh[8] = { 875, 850, 825, 800, 800, 825, 850, 875 };	//threshold for when robot should stop; more strict in front because stop is more likely necessary
 	
 	//check sensor data and stop if necessary
 	for (int i = 0; i < 8; i++) {

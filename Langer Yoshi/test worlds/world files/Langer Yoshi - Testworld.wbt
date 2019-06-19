@@ -15,7 +15,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation 0.4884824165887579 0.7779318219626136 0.39523032406627845 4.5076847827948
-  position -16.60836462707906 24.945726994520584 -0.11476979941768128
+  position -9.216447444267695 13.19553901080847 -5.894291021567144
   followOrientation TRUE
 }
 TexturedBackground {
@@ -471,7 +471,7 @@ Gnome {
   translation 0 0 2.4200000000000004
 }
 Robot {
-  translation -1.3763530840958327 0.1081746697224394 -9.202694032783706
+  translation -0.6220146116373391 0.13589368642515412 -6.103290037644957
   rotation 0.03591340255252822 -0.9993322491933838 -0.006729282219733735 -0.23890062398033443
   children [
     DEF EXTENSION_SLOT Group {
@@ -714,8 +714,6 @@ Robot {
           density -1
           mass 0.8
         }
-        linearVelocity 0.3827602074209531 -0.004982602107486394 0.09499076478143462
-        angularVelocity 6.187713218358769 1.8007737967204709 -1.2036688507207898
       }
     }
     DEF FRONT_BLACK_PANEL Shape {
@@ -807,8 +805,6 @@ Robot {
         name "back right wheel"
         boundingObject USE BOUNDING_WHEEL
         physics USE WHEEL_PHYSICS
-        linearVelocity 0.24820437324590564 -0.008182198151015452 -0.5965694336086849
-        angularVelocity -6.150475645788493 1.8037440308089585 1.1830260125781886
       }
     }
     DEF FRONT_LEFT_WHEEL HingeJoint {
@@ -837,8 +833,6 @@ Robot {
         name "front left wheel"
         boundingObject USE BOUNDING_WHEEL
         physics USE WHEEL_PHYSICS
-        linearVelocity -0.08390832641629538 0.0003835468245553977 0.18618027185891206
-        angularVelocity 6.187714171779469 1.8007812554360947 -1.2036239808618507
       }
     }
     DEF FRONT_RIGHT_WHEEL HingeJoint {
@@ -867,8 +861,6 @@ Robot {
         name "front right wheel"
         boundingObject USE BOUNDING_WHEEL
         physics USE WHEEL_PHYSICS
-        linearVelocity -0.218546308718964 -0.0026931765427568987 -0.5054292890199102
-        angularVelocity -6.150447885507163 1.803732697080256 1.18305302927673
       }
     }
     DEF BUMP_1 TouchSensor {
@@ -2908,6 +2900,4 @@ Robot {
   }
   controller "Main_Controller"
   remoteControl "p3at-herbert"
-  linearVelocity 0.06826899469382558 -0.0038075461266478053 -0.20088555014013526
-  angularVelocity 0.018349405504321636 1.787516598198837 -0.011916462372361544
 }

@@ -7,8 +7,8 @@ public:
 	P3AT_RoadmapController() {};
 	WayPoint getCoord();
 	WayPoint getCoord(int index);
-	void addCoord(double x, double y);
-	void addCoord(double x, double y, int index);
+	void addCoord(double x, double y, bool navGarbage);
+	void addCoord(double x, double y, int index, bool navGarbage);
 	void delCoord();
 	void delCoord(int index);
 protected:

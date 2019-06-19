@@ -1,7 +1,264 @@
 currentPos X: 0, currentPos Y: 0; destination X: 0, destination Y: 1000
 calculated angle to y-axis: 0; rotation: 0; distance: 1000
-percentDone 0.002816
-posX 0, posY: 2.816
-x: 1, y: 2.816
-currentPos X: 0, currentPos Y: 2.816; destination X: 1, destination Y: 2.816
-calculated angle to y-axis: 90; rotation: 90; distance: 1
+percentDone 0.00056
+posX 0, posY: 0.56
+x: -0.0782172, y: 1.05384
+currentPos X: 0, currentPos Y: 0.56; destination X: -0.0782172, destination Y: 1.05384
+calculated angle to y-axis: -9; rotation: -9; distance: 0.5
+percentDone 0
+posX 0, posY: 0.56
+x: -0.154508, y: 1.03553
+currentPos X: 0, currentPos Y: 0.56; destination X: -0.154508, destination Y: 1.03553
+calculated angle to y-axis: -18; rotation: -9; distance: 0.5
+percentDone 0
+posX 0, posY: 0.56
+x: -0.211309, y: 1.01315
+currentPos X: 0, currentPos Y: 0.56; destination X: -0.211309, destination Y: 1.01315
+calculated angle to y-axis: -25; rotation: -7; distance: 0.5
+percentDone 0
+posX 0, posY: 0.56
+x: -0.26496, y: 0.984024
+currentPos X: 0, currentPos Y: 0.56; destination X: -0.26496, destination Y: 0.984024
+calculated angle to y-axis: -32; rotation: -7; distance: 0.5
+percentDone 0
+posX 0, posY: 0.56
+x: -0.293893, y: 0.964508
+currentPos X: 0, currentPos Y: 0.56; destination X: -0.293893, destination Y: 0.964508
+calculated angle to y-axis: -36; rotation: -4; distance: 0.5
+percentDone 0
+posX 0, posY: 0.56
+x: -0.321394, y: 0.943022
+currentPos X: 0, currentPos Y: 0.56; destination X: -0.321394, destination Y: 0.943022
+calculated angle to y-axis: -40; rotation: -4; distance: 0.5
+percentDone 0
+posX 0, posY: 0.56
+x: -0.347329, y: 0.91967
+currentPos X: 0, currentPos Y: 0.56; destination X: -0.347329, destination Y: 0.91967
+calculated angle to y-axis: -44; rotation: -4; distance: 0.5
+currentPos X: -0.347329, currentPos Y: 0.91967; destination X: 0, destination Y: 1000
+calculated angle to y-axis: 0.0199188; rotation: 44.0199; distance: 999.08
+percentDone 8.00736e-05
+posX -0.347301, posY: 0.99967
+x: -0.382006, y: 1.49846
+currentPos X: -0.347301, currentPos Y: 0.99967; destination X: -0.382006, destination Y: 1.49846
+calculated angle to y-axis: -3.98008; rotation: -4; distance: 0.5
+percentDone 0
+posX -0.347301, posY: 0.99967
+x: -0.416716, y: 1.49483
+currentPos X: -0.347301, currentPos Y: 0.99967; destination X: -0.416716, destination Y: 1.49483
+calculated angle to y-axis: -7.98008; rotation: -4; distance: 0.5
+percentDone 0
+posX -0.347301, posY: 0.99967
+x: -0.451087, y: 1.48878
+currentPos X: -0.347301, currentPos Y: 0.99967; destination X: -0.451087, destination Y: 1.48878
+calculated angle to y-axis: -11.9801; rotation: -4; distance: 0.5
+percentDone 0
+posX -0.347301, posY: 0.99967
+x: -0.484953, y: 1.48035
+currentPos X: -0.347301, currentPos Y: 0.99967; destination X: -0.484953, destination Y: 1.48035
+calculated angle to y-axis: -15.9801; rotation: -4; distance: 0.5
+percentDone 0.128
+posX -0.364921, posY: 1.0612
+x: -0.560126, y: 1.52152
+currentPos X: -0.364921, currentPos Y: 1.0612; destination X: -0.560126, destination Y: 1.52152
+calculated angle to y-axis: -22.9801; rotation: -7; distance: 0.5
+percentDone 0
+posX -0.364921, posY: 1.0612
+x: -0.61477, y: 1.4943
+currentPos X: -0.364921, currentPos Y: 1.0612; destination X: -0.61477, destination Y: 1.4943
+calculated angle to y-axis: -29.9801; rotation: -7; distance: 0.5
+percentDone 0
+posX -0.364921, posY: 1.0612
+x: -0.644373, y: 1.47581
+currentPos X: -0.364921, currentPos Y: 1.0612; destination X: -0.644373, destination Y: 1.47581
+calculated angle to y-axis: -33.9801; rotation: -4; distance: 0.5
+percentDone 0
+posX -0.364921, posY: 1.0612
+x: -0.672615, y: 1.45531
+currentPos X: -0.364921, currentPos Y: 1.0612; destination X: -0.672615, destination Y: 1.45531
+calculated angle to y-axis: -37.9801; rotation: -4; distance: 0.5
+percentDone 0
+posX -0.364921, posY: 1.0612
+x: -0.699357, y: 1.43289
+currentPos X: -0.364921, currentPos Y: 1.0612; destination X: -0.699357, destination Y: 1.43289
+calculated angle to y-axis: -41.9801; rotation: -4; distance: 0.5
+percentDone 0
+posX -0.364921, posY: 1.0612
+x: -0.705793, y: 1.42699
+currentPos X: -0.364921, currentPos Y: 1.0612; destination X: -0.705793, destination Y: 1.42699
+calculated angle to y-axis: -42.9801; rotation: -1; distance: 0.5
+currentPos X: -0.705793, currentPos Y: 1.42699; destination X: 0, destination Y: 1000
+calculated angle to y-axis: 0.0404967; rotation: 43.0206; distance: 998.573
+percentDone 9.61372e-05
+posX -0.705725, posY: 1.52299
+x: -0.766309, y: 2.01931
+currentPos X: -0.705725, currentPos Y: 1.52299; destination X: -0.766309, destination Y: 2.01931
+calculated angle to y-axis: -6.9595; rotation: -7; distance: 0.5
+percentDone 0
+posX -0.705725, posY: 1.52299
+x: -0.826343, y: 2.00823
+currentPos X: -0.705725, currentPos Y: 1.52299; destination X: -0.826343, destination Y: 2.00823
+calculated angle to y-axis: -13.9595; rotation: -7; distance: 0.5
+percentDone 0.192
+posX -0.728884, posY: 1.61616
+x: -0.907738, y: 2.08307
+currentPos X: -0.728884, currentPos Y: 1.61616; destination X: -0.907738, destination Y: 2.08307
+calculated angle to y-axis: -20.9595; rotation: -7; distance: 0.5
+percentDone 0
+posX -0.728884, posY: 1.61616
+x: -0.939872, y: 2.06946
+currentPos X: -0.728884, currentPos Y: 1.61616; destination X: -0.939872, destination Y: 2.06946
+calculated angle to y-axis: -24.9595; rotation: -4; distance: 0.5
+percentDone 0
+posX -0.728884, posY: 1.61616
+x: -0.970979, y: 2.05364
+currentPos X: -0.728884, currentPos Y: 1.61616; destination X: -0.970979, destination Y: 2.05364
+calculated angle to y-axis: -28.9595; rotation: -4; distance: 0.5
+percentDone 0
+posX -0.728884, posY: 1.61616
+x: -1.00091, y: 2.03568
+currentPos X: -0.728884, currentPos Y: 1.61616; destination X: -1.00091, destination Y: 2.03568
+calculated angle to y-axis: -32.9595; rotation: -4; distance: 0.5
+currentPos X: -1.00091, currentPos Y: 2.03568; destination X: 0, destination Y: 1000
+calculated angle to y-axis: 0.0574647; rotation: 33.017; distance: 997.965
+percentDone 0.000160326
+posX -1.00075, posY: 2.19568
+x: -1.00897, y: 2.69562
+currentPos X: -1.00075, currentPos Y: 2.19568; destination X: -1.00897, destination Y: 2.69562
+calculated angle to y-axis: -0.942535; rotation: -1; distance: 0.5
+percentDone 0
+posX -1.00075, posY: 2.19568
+x: -1.01769, y: 2.6954
+currentPos X: -1.00075, currentPos Y: 2.19568; destination X: -1.01769, destination Y: 2.6954
+calculated angle to y-axis: -1.94254; rotation: -1; distance: 0.5
+percentDone 0
+posX -1.00075, posY: 2.19568
+x: -1.02641, y: 2.69503
+currentPos X: -1.00075, currentPos Y: 2.19568; destination X: -1.02641, destination Y: 2.69503
+calculated angle to y-axis: -2.94254; rotation: -1; distance: 0.5
+percentDone 0
+posX -1.00075, posY: 2.19568
+x: -1.03512, y: 2.6945
+currentPos X: -1.00075, currentPos Y: 2.19568; destination X: -1.03512, destination Y: 2.6945
+calculated angle to y-axis: -3.94254; rotation: -1; distance: 0.5
+percentDone 0
+posX -1.00075, posY: 2.19568
+x: -1.04382, y: 2.69383
+currentPos X: -1.00075, currentPos Y: 2.19568; destination X: -1.04382, destination Y: 2.69383
+calculated angle to y-axis: -4.94254; rotation: -1; distance: 0.5
+percentDone 0
+posX -1.00075, posY: 2.19568
+x: -1.05251, y: 2.693
+currentPos X: -1.00075, currentPos Y: 2.19568; destination X: -1.05251, destination Y: 2.693
+calculated angle to y-axis: -5.94254; rotation: -1; distance: 0.5
+percentDone 0
+posX -1.00075, posY: 2.19568
+x: -1.06118, y: 2.69202
+currentPos X: -1.00075, currentPos Y: 2.19568; destination X: -1.06118, destination Y: 2.69202
+calculated angle to y-axis: -6.94254; rotation: -1; distance: 0.5
+percentDone 0.832
+posX -1.05103, posY: 2.60863
+x: -1.18837, y: 3.0894
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -1.18837, destination Y: 3.0894
+calculated angle to y-axis: -15.9425; rotation: -9; distance: 0.5
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -1.26188, y: 3.062
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -1.26188, destination Y: 3.062
+calculated angle to y-axis: -24.9425; rotation: -9; distance: 0.5
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -1.31556, y: 3.03292
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -1.31556, destination Y: 3.03292
+calculated angle to y-axis: -31.9425; rotation: -7; distance: 0.5
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -1.3653, y: 2.99752
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -1.3653, destination Y: 2.99752
+calculated angle to y-axis: -38.9425; rotation: -7; distance: 0.5
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -1.42227, y: 2.94357
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -1.42227, destination Y: 2.94357
+calculated angle to y-axis: -47.9425; rotation: -9; distance: 0.5
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -1.47009, y: 2.88137
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -1.47009, destination Y: 2.88137
+calculated angle to y-axis: -56.9425; rotation: -9; distance: 0.5
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -1.5076, y: 2.81246
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -1.5076, destination Y: 2.81246
+calculated angle to y-axis: -65.9425; rotation: -9; distance: 0.5
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -1.53386, y: 2.73853
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -1.53386, destination Y: 2.73853
+calculated angle to y-axis: -74.9425; rotation: -9; distance: 0.5
+Middle left sensor sensed
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -0.568197, y: 2.47874
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -0.568197, destination Y: 2.47874
+calculated angle to y-axis: -254.943; rotation: -180; distance: 0.5
+Middle left sensor sensed
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -0.568197, y: 2.47874
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -0.568197, destination Y: 2.47874
+calculated angle to y-axis: -254.943; rotation: 2.84217e-14; distance: 0.5
+Middle left sensor sensed
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -0.568197, y: 2.47874
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -0.568197, destination Y: 2.47874
+calculated angle to y-axis: -254.943; rotation: 0; distance: 0.5
+Middle left sensor sensed
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -0.568197, y: 2.47874
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -0.568197, destination Y: 2.47874
+calculated angle to y-axis: -254.943; rotation: 0; distance: 0.5
+Middle left sensor sensed
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -0.568197, y: 2.47874
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -0.568197, destination Y: 2.47874
+calculated angle to y-axis: -254.943; rotation: 0; distance: 0.5
+Middle left sensor sensed
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -0.568197, y: 2.47874
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -0.568197, destination Y: 2.47874
+calculated angle to y-axis: -254.943; rotation: 0; distance: 0.5
+Middle left sensor sensed
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -0.568197, y: 2.47874
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -0.568197, destination Y: 2.47874
+calculated angle to y-axis: -254.943; rotation: 0; distance: 0.5
+Middle left sensor sensed
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -0.568197, y: 2.47874
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -0.568197, destination Y: 2.47874
+calculated angle to y-axis: -254.943; rotation: 0; distance: 0.5
+Middle left sensor sensed
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -0.568197, y: 2.47874
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -0.568197, destination Y: 2.47874
+calculated angle to y-axis: -254.943; rotation: 0; distance: 0.5
+Middle left sensor sensed
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -0.568197, y: 2.47874
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -0.568197, destination Y: 2.47874
+calculated angle to y-axis: -254.943; rotation: 0; distance: 0.5
+Middle left sensor sensed
+percentDone 0
+posX -1.05103, posY: 2.60863
+x: -0.568197, y: 2.47874
+currentPos X: -1.05103, currentPos Y: 2.60863; destination X: -0.568197, destination Y: 2.47874
+calculated angle to y-axis: -254.943; rotation: 0; distance: 0.5

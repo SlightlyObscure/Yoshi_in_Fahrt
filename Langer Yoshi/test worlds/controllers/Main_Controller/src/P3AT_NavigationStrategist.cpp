@@ -51,8 +51,11 @@ void P3AT_NavigationStrategist::mcDone(double rotation, double percentDone) {
 	delete[]sensData;
 	
 	//create waypoint and add it to roadmap
-	WayPoint altRoute = getAltRoute(direct, 1);
-	roadmapController->addCoord(altRoute.x, altRoute.y);
+	WayPoint altRoute = getAltRoute(direct, 0.5);
+
+	roadmapController->addCoord(altRoute.x, altRoute.y, true);
+
+    std::cout << "garbage? " << roadmapController->getCoord(1).isNavGarbage << std::endl;
 
 	//LOG
 	std::ostringstream strs2;
@@ -129,7 +132,8 @@ double P3AT_NavigationStrategist::getVecLen(double vecX, double vecY) {
 
 double P3AT_NavigationStrategist::getUnoccupied(double *sensData) {
 	double unOcThresh = 800;	//direction of sensor output counts as unoccupied if value is below this
-	
+	double fun_value = 0.1;
+
 	//these arrays correspond to each sensor; is true if sensor value is below threshold
 	bool front[MAX_SENSOR_NUMBER / 2] = { false };
 	bool back[MAX_SENSOR_NUMBER / 2] = { false };
@@ -148,30 +152,39 @@ double P3AT_NavigationStrategist::getUnoccupied(double *sensData) {
 	int leftVal = 0, rightVal = 0;
 	//get necessary rotation to avoid obstacles on the left
 	if (front[3]) {
-		leftVal = -90;
+		leftVal = 90 * fun_value;
+		std::cout << "Middle left sensor sensed" << std::endl;
+		Log::writeLog("Middle left sensor sensed");
 	}
 	else if (front[2]) {
-		leftVal = -70;
+		leftVal = 70 * fun_value;
+        std::cout << "Slightly left sensor sensed" << std::endl;
 	}
 	else if (front[1]) {
-		leftVal = -40;
+		leftVal = 40 * fun_value;
+        std::cout << "Nearly left sensor sensed" << std::endl;
 	}
 	else if (front[0]) {
-		leftVal = -15;
+		leftVal = 15 * fun_value;
+        std::cout << "Left sensor sensed" << std::endl;
 	}
 
 	//get necessary rotation to avoid obstacles on the right
 	if (leftVal == 0 && front[4]) {		//if left already has an obstacle a 90 turn will usually not be enough; however if sensor #4 and #5 both report an obstacle a 90 turn is sufficient as these both point straight ahead
-		rightVal = 90;
+		rightVal = -90 * fun_value;
+        std::cout << "Middle right sensor sensed" << std::endl;
 	}
 	else if (front[5]) {
-		rightVal = 70;
+		rightVal = -70 * fun_value;
+        std::cout << "Slightly right sensor sensed" << std::endl;
 	}
 	else if (front[6]) {
-		rightVal = 40;
+		rightVal = -40 * fun_value;
+        std::cout << "Nearly right sensor sensed" << std::endl;
 	}
 	else if (front[7]) {
-		rightVal = 15;
+		rightVal = -15 * fun_value;
+        std::cout << "Right sensor sensed" << std::endl;
 	}
 
 	if (leftVal != 0 && rightVal == 0) {//if obstacles are only on the left return left
